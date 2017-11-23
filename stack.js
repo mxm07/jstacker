@@ -254,6 +254,12 @@ function draw() {
 	ctx.font = "25px Comforta";
 	ctx.fillText( "Score: " + score, 10, 75 );
 
+	
+	ctx.textAlign = "right";
+	ctx.font = "20px Comforta";	
+	ctx.fillText( "press space to place a block", canvas.width - 10, 25 );
+	ctx.textAlign = "left";
+	
 	if( gameOverScreen ) {
 		ctx.save();
 		ctx.font = "40px Comforta";
